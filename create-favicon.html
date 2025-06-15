@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generar Favicon</title>
+</head>
+<body>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <br><br>
+    <a id="download" download="favicon.ico">Descargar Favicon</a>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Fondo con degradado
+        const gradient = ctx.createLinearGradient(0, 0, 32, 32);
+        gradient.addColorStop(0, '#2563eb');
+        gradient.addColorStop(0.5, '#7c3aed');
+        gradient.addColorStop(1, '#059669');
+        
+        // Dibujar fondo
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 32, 32);
+        
+        // Dibujar DR
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 16px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('DR', 16, 16);
+        
+        // Convertir a blob y crear enlace de descarga
+        canvas.toBlob(function(blob) {
+            const url = URL.createObjectURL(blob);
+            document.getElementById('download').href = url;
+        }, 'image/png');
+    </script>
+</body>
+</html> 
