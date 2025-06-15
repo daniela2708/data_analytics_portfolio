@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-blue via-primary-purple to-primary-green mx-auto mb-8"></div>
