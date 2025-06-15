@@ -41,12 +41,12 @@ export interface Certification {
 
 export const personalInfo = {
   name: "Daniela Rios",
-  title: "Senior Data Analyst",
+  title: "Economist & Data Professional",
   location: "Bogotá, Colombia",
   phone: "+57 3103783850",
   email: "danielariosperez2@gmail.com",
   linkedin: "https://linkedin.com/in/daniela-rios-perez/",
-  summary: "Data Analytics professional with experience transforming complex business problems into data-driven solutions. Track record of analyzing data from multiple sources to provide actionable insights. MSc in Biostatistics and Bioinformatics graduate with strong stakeholder management skills and experience in Agile methodologies. Focus on translating business requirements into technical solutions while ensuring data quality and consistency throughout the development lifecycle."
+  summary: "Economist and data professional with a passion for transforming data into actionable insights. Committed to driving business value and innovation through advanced analytics, data engineering, and AI-powered solutions."
 };
 
 export const projects: Project[] = [

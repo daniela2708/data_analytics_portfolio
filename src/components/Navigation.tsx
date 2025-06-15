@@ -74,16 +74,35 @@ const Navigation: React.FC = () => {
             
             {/* Get in Touch Button */}
             <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.02, y: -2 }}
+              whileTap={{ scale: 0.98 }}
               onClick={() => {
                 document.querySelector('#contact')?.scrollIntoView({ 
                   behavior: 'smooth' 
                 });
               }}
-              className="bg-gradient-to-r from-primary-blue via-primary-purple to-primary-green text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+              className="text-white font-semibold transition-all duration-300 flex items-center gap-2"
+              style={{
+                background: 'linear-gradient(135deg, #10b981 0%, #06b6d4 100%)',
+                borderRadius: '50px',
+                padding: '0.75rem 1.5rem',
+                fontSize: '0.95rem',
+                fontWeight: '600',
+                boxShadow: '0 8px 25px rgba(16, 185, 129, 0.3)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 12px 35px rgba(16, 185, 129, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0px)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(16, 185, 129, 0.3)';
+              }}
             >
-              <span className="text-sm">💼</span>
+              <svg className="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
               Get in Touch
             </motion.button>
           </div>
@@ -160,9 +179,20 @@ const Navigation: React.FC = () => {
                 });
                 setIsMobileMenuOpen(false);
               }}
-              className="w-full bg-gradient-to-r from-primary-blue via-primary-purple to-primary-green text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 mt-4"
+              className="w-full text-white font-semibold transition-all duration-300 flex items-center justify-center gap-2 mt-4"
+              style={{
+                background: 'linear-gradient(135deg, #10b981 0%, #06b6d4 100%)',
+                borderRadius: '50px',
+                padding: '0.9rem 1.8rem',
+                fontSize: '0.95rem',
+                fontWeight: '600',
+                boxShadow: '0 8px 25px rgba(16, 185, 129, 0.3)',
+              }}
             >
-              <span className="text-sm">💼</span>
+              <svg className="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
               Get in Touch
             </motion.button>
           </div>
