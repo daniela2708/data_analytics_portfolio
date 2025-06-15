@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+# 📊 Daniela Ríos - Data Analytics Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un portafolio moderno y responsivo desarrollado en React + TypeScript, showcasing mi experiencia en análisis de datos, visualización y business intelligence.
 
-## Available Scripts
+## 🚀 **Características**
 
-In the project directory, you can run:
+- ✨ **Diseño moderno** con animaciones fluidas (Framer Motion)
+- 📱 **Completamente responsivo** para todos los dispositivos
+- 🎨 **UI profesional** con Tailwind CSS
+- ⚡ **Optimizado** para rendimiento y SEO
+- 🔗 **Integración de redes sociales** (LinkedIn, WhatsApp, Telegram)
+- 📧 **Formulario de contacto** funcional
 
-### `npm start`
+## 🛠️ **Tecnologías Utilizadas**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend:** React 18, TypeScript
+- **Styling:** Tailwind CSS
+- **Animaciones:** Framer Motion
+- **Build Tool:** Create React App
+- **Deployment:** Vercel
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🏃‍♀️ **Desarrollo Local**
 
-### `npm test`
+```bash
+# Instalar dependencias
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Ejecutar servidor de desarrollo
+npm start
 
-### `npm run build`
+# Crear build de producción
+npm run build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 **Estructura del Proyecto**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+src/
+├── components/         # Componentes React
+│   ├── Navigation.tsx  # Barra de navegación
+│   ├── Hero.tsx       # Sección principal
+│   ├── About.tsx      # Acerca de mí
+│   ├── Projects.tsx   # Proyectos destacados
+│   ├── Experience.tsx # Experiencia laboral
+│   ├── Skills.tsx     # Habilidades técnicas
+│   ├── Contact.tsx    # Formulario de contacto
+│   └── Footer.tsx     # Pie de página
+├── data/              # Data del portafolio
+│   └── portfolioData.ts
+├── assets/            # Recursos estáticos
+└── types/             # Definiciones TypeScript
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📈 **Secciones del Portafolio**
 
-### `npm run eject`
+- **Hero:** Presentación principal con llamada a la acción
+- **About:** Información personal y profesional
+- **Projects:** Proyectos de análisis de datos destacados
+- **Experience:** Experiencia laboral y logros
+- **Skills:** Habilidades técnicas y herramientas
+- **Contact:** Formulario de contacto y redes sociales
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🔗 **Enlaces**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Portfolio Live:** [https://daniela-rios-portfolio.vercel.app](portfolio-url)
+- **LinkedIn:** [Daniela Ríos](https://linkedin.com/in/daniela-rios)
+- **GitHub:** [daniela2708](https://github.com/daniela2708)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Desarrollado con ❤️ por Daniela Ríos | Data Analytics Specialist**
