@@ -14,10 +14,9 @@ const Experience: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
             Professional <span className="gradient-text">Experience</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary-blue via-primary-purple to-primary-green mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Over 6 years of experience in data analytics across diverse industries, 
             from hospitality to advertising, delivering data-driven solutions that drive business growth.

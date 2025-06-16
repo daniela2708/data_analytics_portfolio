@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
+import SectionDivider from './components/SectionDivider';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Education from './components/Education';
@@ -21,10 +22,15 @@ const App: React.FC = () => {
       >
         <Hero />
         <About />
+        <SectionDivider />
         <Projects />
-        <Experience />
-        <Education />
+        <SectionDivider />
         <Skills />
+        <SectionDivider />
+        <Experience />
+        <SectionDivider />
+        <Education />
+        <SectionDivider />
         <Contact />
       </motion.main>
       <Footer />

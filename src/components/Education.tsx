@@ -13,7 +13,7 @@ const Education: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
             Education & <span className="gradient-text">Certifications</span>
           </h2>
         </motion.div>
