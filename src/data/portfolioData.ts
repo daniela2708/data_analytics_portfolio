@@ -7,6 +7,7 @@ export interface Project {
   image?: string;
   category: 'dashboard' | 'rmarkdown' | 'tableau' | 'powerbi' | 'other';
   featured: boolean;
+  underMaintenance?: boolean;
 }
 
 export interface Experience {
@@ -52,54 +53,55 @@ export const personalInfo = {
 export const projects: Project[] = [
   {
     id: "hilton-dashboard",
-    title: "Hilton Analytics Dashboard",
-    description: "Comprehensive analytics dashboard for hospitality industry with interactive visualizations and real-time data insights. Features web, desktop and mobile versions with integrated chatbot.",
-    technologies: ["React", "Next.js", "D3.js", "TypeScript", "Chatbot Integration"],
+    title: "Hospitality Intelligence Hub",
+    description: "Interactive analytics dashboard for hospitality industry featuring comprehensive data visualizations and performance metrics. Built with modern web technologies to provide intuitive insights for hotel operations across web and desktop platforms.",
+    technologies: ["React", "TypeScript"],
     link: "https://hilton-all.vercel.app/",
     category: "dashboard",
-    featured: true
+    featured: false
   },
   {
     id: "emerge-dashboard",
-    title: "Emerge Business Intelligence",
-    description: "Advanced BI solution with custom reporting capabilities and automated data processing workflows. Multi-platform dashboard with chatbot assistance.",
-    technologies: ["React", "JavaScript", "Chart.js", "API Integration", "Chatbot"],
+    title: "Canary Islands R&D Observatory",
+    description: "Research and development observatory platform for the Canary Islands featuring data analytics and innovation metrics. Built to monitor and visualize R&D activities, funding trends, and technological advancement indicators across web, desktop, and mobile platforms.",
+    technologies: ["React", "TypeScript"],
     link: "https://emerge-orcin.vercel.app/",
     category: "dashboard",
-    featured: true
+    featured: true,
+    underMaintenance: true
   },
   {
     id: "qatar-tourism",
-    title: "Qatar Tourism Analytics",
-    description: "Tourism data visualization platform with interactive maps and statistical analysis. Available across web, desktop and mobile platforms with AI chatbot.",
-    technologies: ["React", "Mapbox", "Python", "Data Visualization", "AI Chatbot"],
+    title: "Qatar Tourism Intelligence",
+    description: "Interactive tourism report platform for Qatar featuring comprehensive visitor statistics, destination analytics, and performance metrics. Built to visualize tourism data, seasonal trends, and hospitality indicators through dynamic charts and interactive reporting tools.",
+    technologies: ["React", "TypeScript"],
     link: "https://qatar-tourism.vercel.app/",
     category: "dashboard",
-    featured: true
+    featured: false
   },
   {
     id: "banks-analytics",
-    title: "Banking Sector Analytics",
-    description: "Financial data analysis platform with risk assessment and performance metrics visualization. Multi-platform solution with intelligent chatbot support.",
-    technologies: ["React", "Financial APIs", "Data Analytics", "Security", "Chatbot"],
+    title: "Banking Ad Investment Tracker",
+    description: "Advanced analytics platform for tracking and analyzing advertising investments across multiple banking institutions. Built to monitor ad spend performance, campaign effectiveness, and competitive advertising strategies through AI-generated insights and interactive data visualizations.",
+    technologies: ["React", "TypeScript"],
     link: "https://banks-two.vercel.app/",
     category: "dashboard",
-    featured: true
+    featured: false
   },
   {
     id: "capital-one",
-    title: "Capital One Dashboard",
-    description: "Enterprise-level financial analytics dashboard with advanced reporting and data integration. Cross-platform compatibility with AI-powered chatbot.",
-    technologies: ["React", "Enterprise APIs", "Advanced Analytics", "TypeScript", "AI Chatbot"],
+    title: "Capital One Analytics",
+    description: "Comprehensive advertising analytics platform for Capital One featuring multimedia content analysis, interactive chatbot assistance, and campaign performance insights. Built to analyze marketing effectiveness, customer engagement, and advertising ROI through rich media visualizations.",
+    technologies: ["React", "TypeScript"],
     link: "https://capital-one-nine.vercel.app/",
     category: "dashboard",
     featured: true
   },
   {
     id: "powerbi-analytics",
-    title: "Power BI Analytics Dashboard",
-    description: "Interactive Power BI dashboard featuring comprehensive data analysis and visualization capabilities with advanced filtering and drill-down functionality.",
-    technologies: ["Power BI", "DAX", "Power Query", "Data Modeling", "Business Intelligence"],
+    title: "Campaign Performance Analytics",
+    description: "Comprehensive advertising campaign analytics dashboard built with Power BI featuring detailed performance metrics, impression tracking, and click-through rate analysis. Provides insights into campaign effectiveness across device categories, sources, and creative dimensions with monthly performance overviews.",
+    technologies: ["Power BI", "Google Analytics"],
     link: "https://app.powerbi.com/view?r=eyJrIjoiYmMyMDk0MzQtZTFkYy00Y2JmLTg5NmYtOTAxY2YyYjExNzg5IiwidCI6IjRhMTM4ZTAyLTQxOTctNDAyOS1iMzVlLTMwODk5YTIwZmI5OSIsImMiOjR9",
     category: "powerbi",
     featured: true
@@ -107,26 +109,26 @@ export const projects: Project[] = [
   {
     id: "datathon-un",
     title: "UN Datathon 2024 - Insight Analytics",
-    description: "72-hour intensive data challenge for the United Nations, creating comprehensive Tableau dashboards and web design solutions for global development insights.",
+    description: "72-hour intensive data challenge for the United Nations, creating comprehensive Tableau dashboards and web design solutions for global development insights. This project features multiple interactive dashboards (all designed by me and available at https://public.tableau.com/app/profile/daniela.rios.perez/vizzes for detailed review).",
     technologies: ["Tableau", "Web Design", "Data Analytics", "UN SDGs", "Dashboard Design"],
     link: "https://andiespejo.github.io/Datathon_insight_analytics/",
     category: "tableau",
-    featured: true
+    featured: false
   },
   {
     id: "rmarkdown-1",
-    title: "Statistical Analysis with R",
-    description: "Comprehensive statistical analysis and data modeling using R Markdown with advanced visualization techniques.",
-    technologies: ["R", "R Markdown", "Statistical Modeling", "Data Visualization"],
+    title: "R Markdown Analytics Showcase",
+    description: "Professional data presentation platform demonstrating advanced R Markdown capabilities for creating elegant, shareable analytical reports. Features interactive visualizations, mathematical equations, dynamic tables, and multiple output formats to showcase sophisticated data storytelling techniques with customizable code visibility.",
+    technologies: ["R Markdown", "R Language"],
     link: "https://rpubs.com/danidata/1219003",
     category: "rmarkdown",
     featured: false
   },
   {
     id: "rmarkdown-2",
-    title: "Advanced Data Mining",
-    description: "Data mining and predictive analytics project with machine learning algorithms implementation.",
-    technologies: ["R", "Machine Learning", "Predictive Analytics", "Data Mining"],
+    title: "EdTech Market Analysis",
+    description: "Comprehensive educational technology market analysis using HolonIQ data, showcasing emerging companies and industry trends through advanced R analytics. Features interactive visualizations, trend analysis, and market insights presented in a professional, shareable format with clean data storytelling techniques.",
+    technologies: ["R Markdown", "R Language"],
     link: "https://rpubs.com/danidata/1219006",
     category: "rmarkdown",
     featured: false

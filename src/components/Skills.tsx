@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { skills } from '../data/portfolioData';
+import EnhancedButton from './EnhancedButton';
+import WorkTogetherIcon from './icons/WorkTogetherIcon';
 
 const Skills: React.FC = () => {
   const getIcon = (category: string) => {
@@ -36,7 +38,7 @@ const Skills: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
             Technical <span className="gradient-text">Skills</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-sm md:text-base text-gray-600 leading-relaxed text-justify max-w-3xl mx-auto">
             A comprehensive toolkit of technologies and methodologies I use to deliver exceptional data analytics solutions.
           </p>
         </motion.div>
@@ -91,17 +93,14 @@ const Skills: React.FC = () => {
             <p className="text-lg text-gray-600 mb-6">
               I'm always excited to work on challenging data projects and help businesses unlock the power of their data.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
+            <EnhancedButton
               onClick={() => {
                 document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-blue via-primary-purple to-primary-green text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              icon={<WorkTogetherIcon />}
             >
-              <span className="w-5 h-5">🚀</span>
               Let's Work Together
-            </motion.button>
+            </EnhancedButton>
           </div>
         </motion.div>
       </div>

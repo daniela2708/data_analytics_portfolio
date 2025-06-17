@@ -15,8 +15,146 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center pt-36">
+      {/* Neural Network Animation Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <svg 
+          className="absolute top-20 left-0 w-full h-96 opacity-[0.03]" 
+          viewBox="0 0 800 400"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {/* Neural Network Nodes */}
+          {[
+            { x: 100, y: 100, delay: 0 },
+            { x: 200, y: 80, delay: 0.2 },
+            { x: 300, y: 120, delay: 0.4 },
+            { x: 400, y: 60, delay: 0.6 },
+            { x: 500, y: 100, delay: 0.8 },
+            { x: 600, y: 140, delay: 1.0 },
+            { x: 700, y: 90, delay: 1.2 },
+            { x: 150, y: 200, delay: 0.3 },
+            { x: 250, y: 180, delay: 0.5 },
+            { x: 350, y: 220, delay: 0.7 },
+            { x: 450, y: 160, delay: 0.9 },
+            { x: 550, y: 200, delay: 1.1 },
+            { x: 650, y: 240, delay: 1.3 },
+            { x: 120, y: 300, delay: 0.4 },
+            { x: 220, y: 280, delay: 0.6 },
+            { x: 320, y: 320, delay: 0.8 },
+            { x: 420, y: 260, delay: 1.0 },
+            { x: 520, y: 300, delay: 1.2 },
+            { x: 620, y: 340, delay: 1.4 },
+          ].map((node, index) => (
+            <motion.circle
+              key={index}
+              cx={node.x}
+              cy={node.y}
+              r="4"
+              fill="#1e3a8a"
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ 
+                opacity: [0, 1, 0.7, 1],
+                scale: [0, 1.2, 0.8, 1],
+              }}
+              transition={{
+                duration: 3,
+                delay: node.delay,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut"
+              }}
+            />
+          ))}
+          
+          {/* Neural Network Connections */}
+          {[
+            { x1: 100, y1: 100, x2: 200, y2: 80 },
+            { x1: 200, y1: 80, x2: 300, y2: 120 },
+            { x1: 300, y1: 120, x2: 400, y2: 60 },
+            { x1: 400, y1: 60, x2: 500, y2: 100 },
+            { x1: 500, y1: 100, x2: 600, y2: 140 },
+            { x1: 600, y1: 140, x2: 700, y2: 90 },
+            { x1: 150, y1: 200, x2: 250, y2: 180 },
+            { x1: 250, y1: 180, x2: 350, y2: 220 },
+            { x1: 350, y1: 220, x2: 450, y2: 160 },
+            { x1: 450, y1: 160, x2: 550, y2: 200 },
+            { x1: 550, y1: 200, x2: 650, y2: 240 },
+            { x1: 120, y1: 300, x2: 220, y2: 280 },
+            { x1: 220, y1: 280, x2: 320, y2: 320 },
+            { x1: 320, y1: 320, x2: 420, y2: 260 },
+            { x1: 420, y1: 260, x2: 520, y2: 300 },
+            { x1: 520, y1: 300, x2: 620, y2: 340 },
+            // Vertical connections
+            { x1: 100, y1: 100, x2: 150, y2: 200 },
+            { x1: 200, y1: 80, x2: 250, y2: 180 },
+            { x1: 300, y1: 120, x2: 350, y2: 220 },
+            { x1: 400, y1: 60, x2: 450, y2: 160 },
+            { x1: 500, y1: 100, x2: 550, y2: 200 },
+            { x1: 600, y1: 140, x2: 650, y2: 240 },
+            { x1: 150, y1: 200, x2: 120, y2: 300 },
+            { x1: 250, y1: 180, x2: 220, y2: 280 },
+            { x1: 350, y1: 220, x2: 320, y2: 320 },
+            { x1: 450, y1: 160, x2: 420, y2: 260 },
+            { x1: 550, y1: 200, x2: 520, y2: 300 },
+            { x1: 650, y1: 240, x2: 620, y2: 340 },
+          ].map((connection, index) => (
+            <motion.line
+              key={index}
+              x1={connection.x1}
+              y1={connection.y1}
+              x2={connection.x2}
+              y2={connection.y2}
+              stroke="#1e3a8a"
+              strokeWidth="1"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ 
+                pathLength: [0, 1, 0.8, 1],
+                opacity: [0, 0.6, 0.3, 0.6]
+              }}
+              transition={{
+                duration: 4,
+                delay: index * 0.1,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut"
+              }}
+            />
+          ))}
+          
+          {/* Data Pulse Effects */}
+          {[
+            { x: 100, y: 100, targetX: 700, targetY: 90 },
+            { x: 120, y: 300, targetX: 620, targetY: 340 },
+            { x: 200, y: 80, targetX: 600, targetY: 140 },
+          ].map((pulse, index) => (
+            <motion.circle
+              key={`pulse-${index}`}
+              r="2"
+              fill="#3b82f6"
+              initial={{ 
+                cx: pulse.x, 
+                cy: pulse.y,
+                opacity: 0,
+                scale: 0
+              }}
+              animate={{ 
+                cx: [pulse.x, pulse.targetX, pulse.x],
+                cy: [pulse.y, pulse.targetY, pulse.y],
+                opacity: [0, 1, 0],
+                scale: [0, 1.5, 0]
+              }}
+              transition={{
+                duration: 6,
+                delay: index * 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+          ))}
+        </svg>
+      </div>
+
       {/* Main Content Section - White Background */}
-      <div className="flex-1 flex items-center justify-center bg-white pb-6">
+      <div className="flex-1 flex items-center justify-center bg-white pb-6 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Text Content */}
