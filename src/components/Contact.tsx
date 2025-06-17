@@ -33,14 +33,12 @@ const Contact: React.FC = () => {
       title: 'Email',
       value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,
-      color: 'from-primary-blue to-primary-purple'
+      color: 'bg-blue-500'
     },
     {
-      icon: '📞',
       title: 'Phone',
       value: personalInfo.phone,
       href: `tel:${personalInfo.phone}`,
-      color: 'from-primary-purple to-primary-green',
       hasSubIcons: true,
       subIcons: [
         {
@@ -60,14 +58,14 @@ const Contact: React.FC = () => {
       title: 'Location',
       value: personalInfo.location,
       href: '#',
-      color: 'from-primary-green to-primary-blue'
+      color: 'bg-teal-400'
     },
     {
       icon: '🔗',
       title: 'LinkedIn',
       value: 'LinkedIn Profile',
       href: personalInfo.linkedin,
-      color: 'from-primary-blue to-primary-green'
+      color: 'bg-sky-600'
     }
   ];
 
@@ -84,7 +82,7 @@ const Contact: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
             Let's <span className="gradient-text">Connect</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-sm md:text-base text-gray-600 leading-relaxed text-justify max-w-3xl mx-auto">
             Ready to transform your data into actionable insights? Let's discuss how I can help drive your business forward.
           </p>
         </motion.div>
@@ -116,21 +114,23 @@ const Contact: React.FC = () => {
                   className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <motion.a
-                      href={item.href}
-                      target={item.href.startsWith('http') ? '_blank' : '_self'}
-                      rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                      whileHover={{ scale: 1.05, y: -2 }}
-                      className="cursor-pointer"
-                    >
-                      <div className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                        {item.title === 'LinkedIn' ? (
-                          <LinkedInIcon size={24} />
-                        ) : (
-                          <span className="text-white text-xl">{item.icon}</span>
-                        )}
-                      </div>
-                    </motion.a>
+                    {item.icon && (
+                      <motion.a
+                        href={item.href}
+                        target={item.href.startsWith('http') ? '_blank' : '_self'}
+                        rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                        whileHover={{ scale: 1.05, y: -2 }}
+                        className="cursor-pointer"
+                      >
+                        <div className={`w-12 h-12 ${item.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                          {item.title === 'LinkedIn' ? (
+                            <LinkedInIcon size={24} />
+                          ) : (
+                            <span className="text-white text-xl">{item.icon}</span>
+                          )}
+                        </div>
+                      </motion.a>
+                    )}
                     
                     {item.hasSubIcons && item.subIcons && (
                       <div className="flex gap-2">

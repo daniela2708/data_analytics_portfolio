@@ -171,7 +171,7 @@ const Hero: React.FC = () => {
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight"
             >
               Hi, I'm{' '}
-              <span className="gradient-text">Daniela</span>
+              <span className="text-cyan-600">Daniela</span>
             </motion.h1>
             
             <motion.div

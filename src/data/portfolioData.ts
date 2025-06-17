@@ -231,36 +231,24 @@ export const experience: Experience[] = [
 
 export const skills: Skill[] = [
   {
-    category: "Frontend Development",
-    items: ["React", "Next.js", "TypeScript", "JavaScript", "Interactive Dashboards", "Custom Reporting Solutions"]
-  },
-  {
-    category: "Data Engineering",
-    items: ["ETL/ELT Pipelines", "Data Integration", "Workflow Automation", "Data Warehousing"]
-  },
-  {
     category: "Programming Languages",
-    items: ["Python", "SQL", "JavaScript", "TypeScript", "R"]
-  },
-  {
-    category: "Cloud Platforms",
-    items: ["Microsoft Azure", "Google Cloud Platform (GCP)"]
+    items: ["Python", "SQL", "R", "JavaScript", "TypeScript"]
   },
   {
     category: "Data Visualization",
-    items: ["Tableau", "Power BI", "Looker Studio", "Apache Superset", "Custom Dashboard Development"]
+    items: ["Tableau", "Power BI", "React Dashboards", "Custom Analytics Solutions"]
   },
   {
-    category: "Data Integration",
-    items: ["API Development", "Database Connectors", "Cross-platform Solutions"]
+    category: "Analytics Tools",
+    items: ["R Markdown", "Statistical Modeling", "Machine Learning", "Business Intelligence"]
   },
   {
-    category: "Process Automation",
-    items: ["Workflow Optimization", "Scheduled Data Pipelines", "Business Process Automation"]
+    category: "Data Engineering",
+    items: ["ETL/ELT Pipelines", "Data Warehousing", "Workflow Automation", "API Integration"]
   },
   {
-    category: "Version Control",
-    items: ["Git", "GitHub"]
+    category: "Cloud Platforms",
+    items: ["Microsoft Azure", "Google Cloud Platform"]
   }
 ];
 

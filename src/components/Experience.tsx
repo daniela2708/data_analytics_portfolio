@@ -17,9 +17,10 @@ const Experience: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
             Professional <span className="gradient-text">Experience</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Over 6 years of experience in data analytics across diverse industries, 
-            from hospitality to advertising, delivering data-driven solutions that drive business growth.
+          <p className="text-sm md:text-base text-gray-600 leading-relaxed text-justify max-w-3xl mx-auto">
+            4+ years of hands-on experience in advanced data analytics and interactive dashboard development, 
+            collaborating with cross-functional teams in hospitality, advertising, and emerging technology markets 
+            to deliver scalable analytics solutions that drive measurable business outcomes.
           </p>
         </motion.div>
 
@@ -128,21 +129,48 @@ const Experience: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="text-lg text-gray-600 mb-6">
-            Want to learn more about my professional journey?
-          </p>
-          <motion.button
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              // In a real application, you would link to an actual resume file
-              alert('Resume download would be implemented here');
-            }}
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-blue via-primary-purple to-primary-green text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <span className="text-xl">📄</span>
-            Download Resume
-          </motion.button>
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+              Want to learn more about my professional journey?
+            </p>
+            <motion.button
+              whileHover={{ 
+                scale: 1.05, 
+                y: -3,
+                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+              }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/assets/documents/Daniela_Rios_CV.pdf';
+                link.download = 'Daniela_Rios_CV.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
+            >
+              {/* Background animation overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              {/* Icon with animation */}
+              <motion.div
+                whileHover={{ rotate: 12, scale: 1.1 }}
+                transition={{ duration: 0.2 }}
+                className="relative z-10"
+              >
+                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+                  <path d="M21 15V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15M7 10L12 15L17 10M12 15V3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </motion.div>
+              
+              {/* Text */}
+              <span className="relative z-10 text-lg">Download Resume</span>
+              
+              {/* Shine effect */}
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 ease-in-out"></div>
+            </motion.button>
+          </div>
         </motion.div>
       </div>
     </section>

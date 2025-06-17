@@ -5,18 +5,10 @@ import { personalInfo } from '../data/portfolioData';
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
-  const quickLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' }
-  ];
-
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 gap-12">
+        <div className="grid lg:grid-cols-3 gap-12">
           {/* Brand & Description */}
           <div className="lg:col-span-2">
             <motion.div
@@ -26,11 +18,11 @@ const Footer: React.FC = () => {
               viewport={{ once: true }}
             >
               <h3 className="text-3xl font-bold mb-4">
-                <span className="gradient-text">Daniela Rios</span>
+                <span className="text-cyan-400">Daniela Rios</span>
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 Senior Data Analyst passionate about transforming complex data into actionable business insights. 
-                Specialized in building advanced dashboards, predictive analytics, and data-driven solutions.
+                Specialized in building advanced dashboards and data-driven solutions.
               </p>
               
               <div className="flex items-center gap-4">
@@ -45,33 +37,6 @@ const Footer: React.FC = () => {
                   <p className="text-gray-400 text-sm">Let's build something amazing together</p>
                 </div>
               </div>
-            </motion.div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <h4 className="text-xl font-semibold mb-6">Quick Links</h4>
-              <nav className="space-y-3">
-                {quickLinks.map((link, index) => (
-                  <motion.button
-                    key={index}
-                    whileHover={{ x: 5 }}
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
-                    onClick={(e: React.MouseEvent) => {
-                      e.preventDefault();
-                      document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                  >
-                    {link.name}
-                  </motion.button>
-                ))}
-              </nav>
             </motion.div>
           </div>
 
