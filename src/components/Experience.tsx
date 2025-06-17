@@ -18,7 +18,7 @@ const Experience: React.FC = () => {
             Professional <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-sm md:text-base text-gray-600 leading-relaxed text-justify max-w-3xl mx-auto">
-            4+ years of hands-on experience in advanced data analytics and interactive dashboard development, 
+            3+ years of hands-on experience in advanced data analytics and interactive dashboard development, 
             collaborating with cross-functional teams in hospitality, advertising, and emerging technology markets 
             to deliver scalable analytics solutions that drive measurable business outcomes.
           </p>

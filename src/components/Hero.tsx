@@ -303,7 +303,7 @@ const Hero: React.FC = () => {
               className="bg-white/60 backdrop-blur-sm rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <h3 className="text-2xl md:text-3xl font-bold gradient-text mb-2">
-                4+
+                3+
               </h3>
               <p className="text-gray-600 font-medium text-xs md:text-sm">Years Experience</p>
             </motion.div>
