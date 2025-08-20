@@ -52,6 +52,15 @@ export const personalInfo = {
 
 export const projects: Project[] = [
   {
+    id: "emerge-dashboard",
+    title: "Canary Islands R&D Observatory",
+    description: "Research and development observatory platform for the Canary Islands featuring data analytics and innovation metrics. Built to monitor and visualize R&D activities, funding trends, and technological advancement indicators across web, desktop, and mobile platforms.",
+    technologies: ["React", "TypeScript"],
+    link: "https://emerge-sandy.vercel.app/",
+    category: "dashboard",
+    featured: true
+  },
+  {
     id: "bovine-census",
     title: "Colombian Bovine Census Analysis System",
     description: "Interactive analysis system for the Colombian bovine census featuring dynamic data visualizations and reporting tools.",
@@ -68,15 +77,6 @@ export const projects: Project[] = [
     link: "https://hilton-all.vercel.app/",
     category: "dashboard",
     featured: false
-  },
-  {
-    id: "emerge-dashboard",
-    title: "Canary Islands R&D Observatory",
-    description: "Research and development observatory platform for the Canary Islands featuring data analytics and innovation metrics. Built to monitor and visualize R&D activities, funding trends, and technological advancement indicators across web, desktop, and mobile platforms.",
-    technologies: ["React", "TypeScript"],
-    link: "https://emerge-sandy.vercel.app/",
-    category: "dashboard",
-    featured: true
   },
   {
     id: "qatar-tourism",
