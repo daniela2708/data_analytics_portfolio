@@ -79,6 +79,11 @@ const Projects: React.FC = () => {
           'Ad Spend Tracking',
           'Multi-Bank Analysis'
         ];
+      case 'bovine-census':
+        return [
+          'Interactive Dashboards',
+          'Data Visualizations'
+        ];
       case 'capital-one':
         return [
           'AI Chatbot Integration',
