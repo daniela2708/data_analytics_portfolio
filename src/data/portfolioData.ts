@@ -52,6 +52,15 @@ export const personalInfo = {
 
 export const projects: Project[] = [
   {
+    id: "bovine-census",
+    title: "Colombian Bovine Census Analysis System",
+    description: "Interactive analysis system for the Colombian bovine census featuring dynamic data visualizations and reporting tools.",
+    technologies: ["React", "TypeScript"],
+    link: "https://ganaderia-one.vercel.app/",
+    category: "dashboard",
+    featured: true
+  },
+  {
     id: "hilton-dashboard",
     title: "Hospitality Intelligence Hub",
     description: "Interactive analytics dashboard for hospitality industry featuring comprehensive data visualizations and performance metrics. Built with modern web technologies to provide intuitive insights for hotel operations across web and desktop platforms.",
@@ -65,10 +74,9 @@ export const projects: Project[] = [
     title: "Canary Islands R&D Observatory",
     description: "Research and development observatory platform for the Canary Islands featuring data analytics and innovation metrics. Built to monitor and visualize R&D activities, funding trends, and technological advancement indicators across web, desktop, and mobile platforms.",
     technologies: ["React", "TypeScript"],
-    link: "https://emerge-orcin.vercel.app/",
+    link: "https://emerge-sandy.vercel.app/",
     category: "dashboard",
-    featured: true,
-    underMaintenance: true
+    featured: true
   },
   {
     id: "qatar-tourism",
