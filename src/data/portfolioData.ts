@@ -53,9 +53,9 @@ export const personalInfo = {
 export const projects: Project[] = [
   {
     id: "avent-intelligence",
-    title: "Avent Ad Intelligence Dashboard",
-    description: "End-to-end multimedia analytics dashboard built to collect ads, Instagram/TikTok posts, and Amazon reviews, download all images/videos, and classify breast pump content using the Gemini API for image understanding.",
-    technologies: ["React", "TypeScript", "Python", "Gemini API"],
+    title: "Ad Intelligence Marketplace Insights",
+    description: "End-to-end multimedia analytics dashboard that collects ads, Instagram/TikTok posts, and Amazon reviews, downloads all images/videos, and classifies breast pump content using the Gemini API for image understanding to visualize market dynamics.",
+    technologies: ["React", "TypeScript", "Python", "Gemini API", "Computer Vision", "Sentiment Analysis"],
     link: "https://avent-three.vercel.app/",
     category: "dashboard",
     featured: true
