@@ -52,6 +52,15 @@ export const personalInfo = {
 
 export const projects: Project[] = [
   {
+    id: "avent-intelligence",
+    title: "Avent Ad Intelligence Dashboard",
+    description: "End-to-end multimedia analytics dashboard built to collect ads, Instagram/TikTok posts, and Amazon reviews, download all images/videos, and classify breast pump content using the Gemini API for image understanding.",
+    technologies: ["React", "TypeScript", "Python", "Gemini API"],
+    link: "https://avent-three.vercel.app/",
+    category: "dashboard",
+    featured: true
+  },
+  {
     id: "emerge-dashboard",
     title: "Canary Islands R&D Observatory",
     description: "Research and development observatory platform for the Canary Islands featuring data analytics and innovation metrics. Built to monitor and visualize R&D activities, funding trends, and technological advancement indicators across web, desktop, and mobile platforms.",
