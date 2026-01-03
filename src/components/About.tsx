@@ -18,7 +18,7 @@ const About: React.FC = () => {
           <div className="space-y-6">
             <p className="text-sm md:text-base text-gray-600 leading-relaxed text-justify">
               Economist with emphasis in Behavioral Economics and a Master's in Biostatistics and 
-              Bioinformatics, currently working as a Senior Data Analyst. With <strong>3+ years of experience</strong> 
+              Bioinformatics, currently working as a Senior Data Analyst. With <strong>5+ years of experience</strong>
               across public and private sectors in industries like transportation, telecommunications, 
               marketing, and startups.
             </p>
