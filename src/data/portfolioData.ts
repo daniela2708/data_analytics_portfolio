@@ -52,6 +52,15 @@ export const personalInfo = {
 
 export const projects: Project[] = [
   {
+    id: "pricing-insights-brief",
+    title: "Pricing Analytics Insights Brief",
+    description: "Interactive pricing analytics dashboard focused on pricing strategy performance, market positioning, and actionable recommendations to optimize revenue outcomes.",
+    technologies: ["React", "TypeScript", "Pricing Analytics", "Data Visualization"],
+    link: "https://pricing-insights-brief.vercel.app/",
+    category: "dashboard",
+    featured: true
+  },
+  {
     id: "avent-intelligence",
     title: "Ad Intelligence Marketplace Insights",
     description: "End-to-end multimedia analytics dashboard that collects ads, Instagram/TikTok posts, and Amazon reviews, downloads all images/videos, and classifies breast pump content using the Gemini API for image understanding to visualize market dynamics.",
