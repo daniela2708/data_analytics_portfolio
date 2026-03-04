@@ -61,6 +61,12 @@ const Projects: React.FC = () => {
           'Data Visualizations',
           'Competitive Analysis'
         ];
+      case 'pricing-insights-brief':
+        return [
+          'Pricing Strategy Analysis',
+          'Revenue Optimization',
+          'Market Positioning Insights'
+        ];
       case 'emerge-dashboard':
         return [
           'R&D Monitoring',
