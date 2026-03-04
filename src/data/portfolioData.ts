@@ -163,13 +163,28 @@ export const projects: Project[] = [
 
 export const experience: Experience[] = [
   {
+    id: "wizeline",
+    company: "Wizeline",
+    position: "Senior Data Analyst",
+    location: "Colombia",
+    startDate: "Sep 2025",
+    endDate: "Present",
+    current: true,
+    description: [
+      "Manage analytics delivery across multiple client accounts, covering data modeling, pipeline development, and reporting",
+      "Partner with product and business stakeholders to translate priorities into structured analytical approaches and clear, actionable insights for senior decision-makers",
+      "Synthesize findings across concurrent projects into executive-level presentations to support planning and prioritization decisions",
+      "Drive continuous improvements to data models and reporting workflows based on stakeholder feedback and evolving business needs"
+    ],
+    technologies: ["Data Modeling", "Data Pipelines", "Reporting", "Stakeholder Management", "Executive Communication"]
+  },
+  {
     id: "ogs-tbwa",
     company: "OGS (Omnicom Global Solutions) - TBWA New York",
     position: "Senior Data Analyst",
     location: "Remote",
     startDate: "Nov 2024",
-    endDate: "Present",
-    current: true,
+    endDate: "Sep 2025",
     description: [
       "Develop interactive dashboards and reporting solutions using React and Next.js",
       "Build and maintain Python-based data pipelines for collecting and integrating information from diverse sources",
